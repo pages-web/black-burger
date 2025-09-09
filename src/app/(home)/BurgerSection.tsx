@@ -3,14 +3,10 @@
 import React from "react";
 import Image from "next/image";
 import pageData from "@/data/pages/home.json";
-import { usePostList } from "@/hooks/usePostList";
-
 export default function BurgerSection() {
   const BurgerSection = pageData.aboutburger;
   const leftFeatures = BurgerSection.features.slice(0, 2);
   const rightFeatures = BurgerSection.features.slice(2);
-
-  const posts = usePostList();
 
   return (
     <section className="max-w-90rem py-[15px] relative flex flex-col justify-center items-center bg-neutral-900/80">

@@ -1,18 +1,29 @@
 "use client";
 import React, { useState } from "react";
 import chainsData from "@/data/pages/chains.json";
-import { Phone, MapPin, Clock, ChevronDown } from "lucide-react";
+import { Phone, Clock, ChevronDown } from "lucide-react";
 import { FiMapPin } from "react-icons/fi";
 
 import Image from "next/image";
 
+interface Location {
+  id: string;
+  branch: string;
+  brand: string;
+  address: string;
+  phone: string;
+  image: string;
+  mapUrl: string;
+  hours: Record<string, string | undefined>;
+}
+
 export default function ChainsPage() {
   const chains = chainsData.chains;
-  const [selectedLocation, setSelectedLocation] = useState(chains.locations[0]);
+  const [selectedLocation, setSelectedLocation] = useState<Location>(chains.locations[0] as Location);
   const [selectedBranch, setSelectedBranch] = useState("Branch");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const handleLocationClick = (location: any) => {
+  const handleLocationClick = (location: Location) => {
     setSelectedLocation(location);
   };
 

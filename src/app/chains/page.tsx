@@ -3,7 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import Image from "next/image";
 
-export default function() {
+export default function ChainsPageWrapper() {
   return(
     <div className="relative h-full w-full overflow-hidden">
           <div className="absolute top-10 left-[-10]">

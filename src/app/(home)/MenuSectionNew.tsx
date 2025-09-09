@@ -11,9 +11,33 @@ import { useQuery } from "@apollo/client";
 import { useProductCategories } from "@/hooks/useProductCategories";
 import { readFile } from "@/lib/utils";
 
+interface Product {
+  _id: string;
+  name: string;
+  shortName: string;
+  description: string;
+  calories?: string;
+  prepTime?: string;
+  attachment?: {
+    url: string;
+  };
+  getTags?: Array<{ name: string }>;
+}
+
+interface MappedItem {
+  image: string;
+  name: string;
+  shortDesc: string;
+  details: {
+    burgerName: string;
+    longDesc: string;
+    tags: string[];
+  };
+}
+
 export default function MenuSection() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const [selectedItem, setSelectedItem] = useState<any>(null);
+  const [selectedItem, setSelectedItem] = useState<MappedItem | null>(null);
   const [activeFilter, setActiveFilter] = useState<string | null>(null);
 
   const { categories } = useProductCategories();
@@ -23,7 +47,7 @@ export default function MenuSection() {
   });
 
   const products = productsData?.products || [];
-  const handleCardClick = (item: any) => {
+  const handleCardClick = (item: Product) => {
     const imageUrl = item.attachment?.url ? readFile(item.attachment.url) : undefined;
     const mappedItem = {
       image: imageUrl || "",
@@ -32,7 +56,7 @@ export default function MenuSection() {
       details: {
         burgerName: item.name,
         longDesc: item.description,
-        tags: item.getTags?.map((t: any) => t.name) || [],
+        tags: item.getTags?.map((t) => t.name) || [],
       }
     };
     setSelectedItem(mappedItem);
@@ -89,7 +113,7 @@ export default function MenuSection() {
                     className="bg-secondary animate-pulse h-[300px]"
                   />
                 ))
-              : products.map((item: any, index: number) => {
+              : products.map((item: Product, index: number) => {
                   const imageUrl = item.attachment ? readFile(item.attachment?.url) : undefined;
                   return (
                     <Card

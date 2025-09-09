@@ -8,17 +8,30 @@ import { DialogContent, DialogTitle, Dialog } from "@/components/ui/dialog";
 import pageData from "@/data/pages/home.json";
 import { useProducts } from "@/hooks/useProducts";
 
+interface MenuItem {
+  name: string;
+  image: string;
+  shortDesc: string;
+  calories: string;
+  prepTime: string;
+  details: {
+    burgerName: string;
+    longDesc: string;
+    tags?: string[];
+  };
+}
+
 export default function MenuSectionOld() {
   const { products } = useProducts();
   const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const [selectedItem, setSelectedItem] = useState<any>(null);
+  const [selectedItem, setSelectedItem] = useState<MenuItem | null>(null);
   const [activeFilter, setActiveFilter] = useState(0);
 
   const menuData = pageData.menu;
   const categories = menuData?.menu || [];
   const currentItems = categories[activeFilter]?.items || [];
 
-  const handleCardClick = (item: any) => {
+  const handleCardClick = (item: MenuItem) => {
     setSelectedItem(item);
     setIsDialogOpen(true);
   };
@@ -124,7 +137,7 @@ export default function MenuSectionOld() {
                         {selectedItem.details?.tags && (
                           <div className="flex justify-between pt-3">
                             {selectedItem.details.tags.map(
-                              (tag: string, index: number) => (
+                              (tag: string) => (
                                 <span
                                   key={tag}
                                   className="text-xs text-foreground bg-secondary border border-neutral-600  md:px-7 lg:px-7 py-1 rounded-full min-w-[80px] text-center"
