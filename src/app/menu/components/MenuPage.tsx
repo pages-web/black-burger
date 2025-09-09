@@ -110,8 +110,26 @@ export default function MenuPage() {
               ? Array.from({ length: 8 }).map((_, idx) => (
                   <Card
                     key={idx}
-                    className="bg-secondary animate-pulse h-[300px]"
-                  />
+                    className="bg-secondary border-none w-full"
+                  >
+                    <CardContent className="p-6">
+                      <div className="w-full h-43 bg-neutral-700 animate-pulse rounded-[16px] relative overflow-hidden flex items-center justify-center mb-4"></div>
+                      <div className="space-y-[10px]">
+                        <div className="h-4 bg-neutral-700 animate-pulse rounded w-3/4 pt-1"></div>
+                        <div className="h-4 bg-neutral-700 animate-pulse rounded w-full"></div>
+                        <div className="flex items-center gap-4 text-sm py-[6px]">
+                          <div className="flex items-center gap-1">
+                            <div className="w-4 h-4 bg-neutral-700 animate-pulse rounded"></div>
+                            <div className="h-3 bg-neutral-700 animate-pulse rounded w-8"></div>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <div className="w-4 h-4 bg-neutral-700 animate-pulse rounded"></div>
+                            <div className="h-3 bg-neutral-700 animate-pulse rounded w-12"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
                 ))
               : products.map((item: Product, index: number) => {
                   const imageUrl = item.attachment ? readFile(item.attachment?.url) : undefined;
