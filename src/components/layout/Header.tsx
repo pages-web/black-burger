@@ -26,7 +26,7 @@ export const Header = () => {
 
   return (
     <header className="w-full h-auto border-b bg-background/70">
-      <div className="flex items-center justify-between h-[57px] lg:h-[117px] mx-auto px-[20px] lg:px-[138px] relative">
+      <div className="max-w-[1167px] flex items-center justify-between h-[57px] lg:h-[117px] mx-auto relative">
         
         <div className="lg:hidden flex items-center">
           <Sheet open={open} onOpenChange={setOpen}>

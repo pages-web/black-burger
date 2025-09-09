@@ -15,10 +15,10 @@ export const Footer = () => {
   const { columns, social, copyright, policy } = data.footer;
 
   return (
-    <footer className="relative w-full px-6 sm:px-12 lg:px-36 py-8 lg:py-12 min-h-[300px] bg-[url('/images/footer.png')] bg-cover bg-center text-foreground flex flex-col justify-between">
+    <footer className="relative w-full py-8 lg:py-12 min-h-[300px] bg-[url('/images/footer.png')] bg-cover bg-center text-foreground flex flex-col justify-between">
       <div className="absolute inset-0 bg-background opacity-80 z-0" />
 
-      <div className="relative z-10 flex flex-col gap-8">
+      <div className="relative z-10 w-full max-w-[1167px] mx-auto px-6 md:px-12 lg:px-10 xl:px-0 flex flex-col gap-8">
         <div className="flex flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap justify-between gap-8 border-b border-neutral-600 pb-6">
           {columns.map((column, i) => (
             <div key={i} className="flex flex-col gap-4 min-w-[150px]">
