@@ -1,0 +1,122 @@
+{
+  "header": {
+    "nav": {
+      "leftnav": [
+        {
+          "label": "ХООЛНЫ ЦЭС",
+          "url": "/menu"
+        },
+        {
+          "label": "ХҮРГЭЛТ",
+          "url": "/delivery"
+        },
+        {
+          "label": "САЛБАР",
+          "url": "/chains"
+        }
+      ],
+      "rightnav": [
+        {
+          "label": "АЖЛЫН БАЙР",
+          "url": "/joboffers"
+        },
+        {
+          "label": "МЭДЭЭ",
+          "url": "/news"
+        },
+        {
+          "label": "ХОЛБОГДОХ",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "columns": [
+      {
+        "title": "Хаяг байршил",
+        "items": [
+          {
+            "label": "\"black burger\" on the bank of the Dund River, 3rd khoroo, BGD"
+          },
+          {
+            "label": "\"black burger\" on the bank of the Dund River, 3rd khoroo, BGD"
+          },
+          {
+            "label": "\"black burger\" on the bank of the Dund River, 3rd khoroo, BGD"
+          }
+        ]
+      },
+      {
+        "title": "Санал хүсэлт",
+        "items": [
+          {
+            "label": "блак@gmail.com"
+          },
+          {
+            "label": "блак@gmail.com"
+          },
+          {
+            "label": "блак@gmail.com"
+          }
+        ]
+      },
+      {
+        "title": "Холбогдох",
+        "items": [
+          {
+            "label": "990101001"
+          },
+          {
+            "label": "990101010"
+          },
+          {
+            "label": "88101001"
+          }
+        ]
+      },
+      {
+        "title": "Холбоос",
+        "items": [
+          {
+            "label": "Нүүр хуудас",
+            "href": "/"
+          },{
+            "label": "Хоолны цэс",
+            "href": "/menu"
+          },{
+            "label": "Хүргэлт",
+            "href": "/delivery"
+          },{
+            "label": "Салбар",
+            "href": "/chains"
+          },
+          {
+            "label": "Ажлын байр",
+            "href": "/joboffers"
+          },
+          {
+            "label": "Мэдээ",
+            "href": "/news"
+          }
+        ]
+      }
+    ],
+    "social": [
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/url"
+      },
+      {
+        "name": "facebook",
+        "url": "https://facebook.com/url"
+      },
+      {
+        "name": "youtube",
+        "url": "https://www.youtube.com/url"
+      }
+    ],
+    "copyright": "© 2025 — Copyright (Erxes llc)",
+    "policy": "Privacy & Policy"
+  }
+}

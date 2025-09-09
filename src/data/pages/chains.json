@@ -1,0 +1,36 @@
+{
+  "chains": {
+    "title": "САЛБАР",
+    "map": "/images/chains-map.png",
+    "locations": [
+      {
+        "id": "chain-amar",
+        "brand": "Дабл Шот",
+        "branch": "Амарын гудамж",
+        "address": "Улаанбаатар хот, СБД, Ерөнхий сайд Амарын гудамж, Баруун Премьер Туушин зочид буудлын зүүн талд",
+        "phone": "(+976) 7712 2662",
+        "hours": {
+          "Даваа": "07:00 - 02:00 шөнийн",
+          "Мягмар-Пүрэв": "07:00 - 04:00 шөнийн",
+          "Хагсайн": "10:00 - 02:00 шөнийн",
+          "Ням": "08:00 - 12:00 шөнийн"
+        },
+        "image": "/images/chain-amar.png",
+        "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2126.4506395973217!2d106.91981080669818!3d47.92025964871489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d96924139c8cf6d%3A0x852c7d9ef6a4a447!2sDoubleshot%20coffee%20and%20cocktail!5e0!3m2!1sen!2smn!4v1756142237336!5m2!1sen!2smn"
+      },
+      {
+        "id": "chain-encanto",
+        "brand": "Дабл Шот",
+        "branch": "Энканто",
+        "address": "БЗД, 26-р хороо, Encanto Mall 4-р давхарт Prime Cineplex Cinema-н хажууд",
+        "phone": "(+976) 7713 2662",
+        "hours": {
+          "Даваа-Баасан": "10:00 - 02:00 шөнийн",
+          "Ням": "10:00 - 12:00 шөнийн"
+        },
+        "image": "/images/chain-encanto.png",
+        "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2674.7234892863503!2d106.92665697657708!3d47.9030369712185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d96933657abf7c1%3A0xb09440a7cb7dcf88!2sEncanto%20Mall!5e0!3m2!1sen!2smn!4v1756141778518!5m2!1sen!2smn"
+      }
+    ]
+  }
+}

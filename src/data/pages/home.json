@@ -1,0 +1,466 @@
+{
+  "hero": {
+    "title": "Black Burger",
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "image": "/images/hero-burger.png",
+    "icon": "/images/hero-icon.png",
+    "prepTime": "5mins"
+  },
+  "aboutburger":{
+    "image": "/images/dissected-burger.png",
+    "features": [
+      {
+        "icon": "/images/burger-flame.png",
+        "label": "High in richness",
+        "description": "Блэк Бургер нь байршлаа өөрчилж, Шинэ салбар Шинэ өнгө төрхтэй уулзах гээд бэлтгэж байгаа шүү"
+      },
+      {
+        "icon": "/images/burger-bowl.png",
+        "label": "High in richness",
+        "description": "Блэк Бургер нь байршлаа өөрчилж, Шинэ салбар Шинэ өнгө төрхтэй уулзах гээд бэлтгэж байгаа шүү"
+      },
+      {
+        "icon": "/images/burger-chilli.png",
+        "label": "High in richness",
+        "description": "Блэк Бургер нь байршлаа өөрчилж, Шинэ салбар Шинэ өнгө төрхтэй уулзах гээд бэлтгэж байгаа шүү"
+      },
+      {
+        "icon": "/images/burger-leaf.png",
+        "label": "High in richness",
+        "description": "Блэк Бургер нь байршлаа өөрчилж, Шинэ салбар Шинэ өнгө төрхтэй уулзах гээд бэлтгэж байгаа шүү"
+      }
+    ]
+  },
+  "menu": {
+    "title": "МЕНЮ",
+    "menu": [
+      {
+        "category": "Гэр Ахуй",
+        "items": [
+          {
+            "id": "Өглөөний сет",
+            "name": "Өглөөний сет",
+            "shortDesc": "Burger with fresh tea and salad",
+            "calories": "100kcal",
+            "prepTime": "10min",
+            "image": "/images/Menu-burger.jpg",
+            "details": {
+              "burgerName": "Classic burger",
+              "longDesc": "A hamburger, or burger, is a food consisting of a cooked patty, typically ground beef, placed inside a sliced bun or roll. It's a popular dish often served with cheese, lettuce, tomato, onion,",
+              "tags": [
+                "Fat-18",
+                "Spicy",
+                "Set",
+                "Burger"
+              ]
+            }
+          },
+          {
+            "id": "Өглөөний сет",
+            "name": "Өглөөний сет",
+            "shortDesc": "Burger with fresh tea and salad",
+            "calories": "100kcal",
+            "prepTime": "10min",
+            "image": "/images/Menu-burger.jpg",
+            "details": {
+              "burgerName": "Classic burger",
+              "longDesc": "A hamburger, or burger, is a food consisting of a cooked patty, typically ground beef, placed inside a sliced bun or roll. It's a popular dish often served with cheese, lettuce, tomato, onion,",
+              "tags": [
+                "Fat-18",
+                "Spicy",
+                "Set",
+                "Burger"
+              ]
+            }
+          },
+          {
+            "id": "Өглөөний сет",
+            "name": "Өглөөний сет",
+            "shortDesc": "Burger with fresh tea and salad",
+            "calories": "100kcal",
+            "prepTime": "10min",
+            "image": "/images/Menu-burger.jpg",
+            "details": {
+              "burgerName": "Classic burger",
+              "longDesc": "A hamburger, or burger, is a food consisting of a cooked patty, typically ground beef, placed inside a sliced bun or roll. It's a popular dish often served with cheese, lettuce, tomato, onion,",
+              "tags": [
+                "Fat-18",
+                "Spicy",
+                "Set",
+                "Burger"
+              ]
+            }
+          },
+          {
+            "id": "Өглөөний сет",
+            "name": "Өглөөний сет",
+            "shortDesc": "Burger with fresh tea and salad",
+            "calories": "100kcal",
+            "prepTime": "10min",
+            "image": "/images/Menu-burger.jpg",
+            "details": {
+              "burgerName": "Classic burger",
+              "longDesc": "A hamburger, or burger, is a food consisting of a cooked patty, typically ground beef, placed inside a sliced bun or roll. It's a popular dish often served with cheese, lettuce, tomato, onion,",
+              "tags": [
+                "Fat-18",
+                "Spicy",
+                "Set",
+                "Burger"
+              ]
+            }
+          },
+          {
+            "id": "Өглөөний сет",
+            "name": "Өглөөний сет",
+            "shortDesc": "Burger with fresh tea and salad",
+            "calories": "100kcal",
+            "prepTime": "10min",
+            "image": "/images/Menu-burger.jpg",
+            "details": {
+              "burgerName": "Classic burger",
+              "longDesc": "A hamburger, or burger, is a food consisting of a cooked patty, typically ground beef, placed inside a sliced bun or roll. It's a popular dish often served with cheese, lettuce, tomato, onion,",
+              "tags": [
+                "Fat-18",
+                "Spicy",
+                "Set",
+                "Burger"
+              ]
+            }
+          },
+          {
+            "id": "Өглөөний сет",
+            "name": "Өглөөний сет",
+            "shortDesc": "Burger with fresh tea and salad",
+            "calories": "100kcal",
+            "prepTime": "10min",
+            "image": "/images/Menu-burger.jpg",
+            "details": {
+              "burgerName": "Classic burger",
+              "longDesc": "A hamburger, or burger, is a food consisting of a cooked patty, typically ground beef, placed inside a sliced bun or roll. It's a popular dish often served with cheese, lettuce, tomato, onion,",
+              "tags": [
+                "Fat-18",
+                "Spicy",
+                "Set",
+                "Burger"
+              ]
+            }
+          },
+          {
+            "id": "Өглөөний сет",
+            "name": "Өглөөний сет",
+            "shortDesc": "Burger with fresh tea and salad",
+            "calories": "100kcal",
+            "prepTime": "10min",
+            "image": "/images/Menu-burger.jpg",
+            "details": {
+              "burgerName": "Classic burger",
+              "longDesc": "A hamburger, or burger, is a food consisting of a cooked patty, typically ground beef, placed inside a sliced bun or roll. It's a popular dish often served with cheese, lettuce, tomato, onion,",
+              "tags": [
+                "Fat-18",
+                "Spicy",
+                "Set",
+                "Burger"
+              ]
+            }
+          },
+          {
+            "id": "Өглөөний сет",
+            "name": "Өглөөний сет",
+            "shortDesc": "Burger with fresh tea and salad",
+            "calories": "100kcal",
+            "prepTime": "10min",
+            "image": "/images/Menu-burger.jpg",
+            "details": {
+              "burgerName": "Classic burger",
+              "longDesc": "A hamburger, or burger, is a food consisting of a cooked patty, typically ground beef, placed inside a sliced bun or roll. It's a popular dish often served with cheese, lettuce, tomato, onion,",
+              "tags": [
+                "Fat-18",
+                "Spicy",
+                "Set",
+                "Burger"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "category": "Гэр Ахуй",
+        "items": [
+          {
+            "id": "Өглөөний сет",
+            "name": "Өглөөний сет",
+            "shortDesc": "Burger with fresh tea and salad",
+            "calories": "100kcal",
+            "prepTime": "10min",
+            "image": "/images/Menu-burger.jpg",
+            "details": {
+              "burgerName": "Classic burger",
+              "longDesc": "A hamburger, or burger, is a food consisting of a cooked patty, typically ground beef, placed inside a sliced bun or roll. It's a popular dish often served with cheese, lettuce, tomato, onion,",
+              "tags": [
+                "Fat-18",
+                "Spicy",
+                "Set",
+                "Burger"
+              ]
+            }
+          },
+          {
+            "id": "Өглөөний сет",
+            "name": "Өглөөний сет",
+            "shortDesc": "Burger with fresh tea and salad",
+            "calories": "100kcal",
+            "prepTime": "10min",
+            "image": "/images/Menu-burger.jpg",
+            "details": {
+              "burgerName": "Classic burger",
+              "longDesc": "A hamburger, or burger, is a food consisting of a cooked patty, typically ground beef, placed inside a sliced bun or roll. It's a popular dish often served with cheese, lettuce, tomato, onion,",
+              "tags": [
+                "Fat-18",
+                "Spicy",
+                "Set",
+                "Burger"
+              ]
+            }
+          },
+          {
+            "id": "Өглөөний сет",
+            "name": "Өглөөний сет",
+            "shortDesc": "Burger with fresh tea and salad",
+            "calories": "100kcal",
+            "prepTime": "10min",
+            "image": "/images/Menu-burger.jpg",
+            "details": {
+              "burgerName": "Classic burger",
+              "longDesc": "A hamburger, or burger, is a food consisting of a cooked patty, typically ground beef, placed inside a sliced bun or roll. It's a popular dish often served with cheese, lettuce, tomato, onion,",
+              "tags": [
+                "Fat-18",
+                "Spicy",
+                "Set",
+                "Burger"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "category": "Гэр Ахуй",
+        "items": [
+          {
+            "id": "Өглөөний сет",
+            "name": "Өглөөний сет",
+            "shortDesc": "Burger with fresh tea and salad",
+            "calories": "100kcal",
+            "prepTime": "10min",
+            "image": "/images/Menu-burger.jpg",
+            "details": {
+              "burgerName": "Classic burger",
+              "longDesc": "A hamburger, or burger, is a food consisting of a cooked patty, typically ground beef, placed inside a sliced bun or roll. It's a popular dish often served with cheese, lettuce, tomato, onion,",
+              "tags": [
+                "Fat-18",
+                "Spicy",
+                "Set",
+                "Burger"
+              ]
+            }
+          },
+          {
+            "id": "Өглөөний сет",
+            "name": "Өглөөний сет",
+            "shortDesc": "Burger with fresh tea and salad",
+            "calories": "100kcal",
+            "prepTime": "10min",
+            "image": "/images/Menu-burger.jpg",
+            "details": {
+              "burgerName": "Classic burger",
+              "longDesc": "A hamburger, or burger, is a food consisting of a cooked patty, typically ground beef, placed inside a sliced bun or roll. It's a popular dish often served with cheese, lettuce, tomato, onion,",
+              "tags": [
+                "Fat-18",
+                "Spicy",
+                "Set",
+                "Burger"
+              ]
+            }
+          },
+          {
+            "id": "Өглөөний сет",
+            "name": "Өглөөний сет",
+            "shortDesc": "Burger with fresh tea and salad",
+            "calories": "100kcal",
+            "prepTime": "10min",
+            "image": "/images/Menu-burger.jpg",
+            "details": {
+              "burgerName": "Classic burger",
+              "longDesc": "A hamburger, or burger, is a food consisting of a cooked patty, typically ground beef, placed inside a sliced bun or roll. It's a popular dish often served with cheese, lettuce, tomato, onion,",
+              "tags": [
+                "Fat-18",
+                "Spicy",
+                "Set",
+                "Burger"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "category": "Гэр Ахуй",
+        "items": [
+          {
+            "id": "Өглөөний сет",
+            "name": "Өглөөний сет",
+            "shortDesc": "Burger with fresh tea and salad",
+            "calories": "100kcal",
+            "prepTime": "10min",
+            "image": "/images/Menu-burger.jpg",
+            "details": {
+              "burgerName": "Classic burger",
+              "longDesc": "A hamburger, or burger, is a food consisting of a cooked patty, typically ground beef, placed inside a sliced bun or roll. It's a popular dish often served with cheese, lettuce, tomato, onion,",
+              "tags": [
+                "Fat-18",
+                "Spicy",
+                "Set",
+                "Burger"
+              ]
+            }
+          },
+          {
+            "id": "Өглөөний сет",
+            "name": "Өглөөний сет",
+            "shortDesc": "Burger with fresh tea and salad",
+            "calories": "100kcal",
+            "prepTime": "10min",
+            "image": "/images/Menu-burger.jpg",
+            "details": {
+              "burgerName": "Classic burger",
+              "longDesc": "A hamburger, or burger, is a food consisting of a cooked patty, typically ground beef, placed inside a sliced bun or roll. It's a popular dish often served with cheese, lettuce, tomato, onion,",
+              "tags": [
+                "Fat-18",
+                "Spicy",
+                "Set",
+                "Burger"
+              ]
+            }
+          },
+          {
+            "id": "Өглөөний сет",
+            "name": "Өглөөний сет",
+            "shortDesc": "Burger with fresh tea and salad",
+            "calories": "100kcal",
+            "prepTime": "10min",
+            "image": "/images/Menu-burger.jpg",
+            "details": {
+              "burgerName": "Classic burger",
+              "longDesc": "A hamburger, or burger, is a food consisting of a cooked patty, typically ground beef, placed inside a sliced bun or roll. It's a popular dish often served with cheese, lettuce, tomato, onion,",
+              "tags": [
+                "Fat-18",
+                "Spicy",
+                "Set",
+                "Burger"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "category": "Гэр Ахуй",
+        "items": [
+          {
+            "id": "Өглөөний сет",
+            "name": "Өглөөний сет",
+            "shortDesc": "Burger with fresh tea and salad",
+            "calories": "100kcal",
+            "prepTime": "10min",
+            "image": "/images/Menu-burger.jpg",
+            "details": {
+              "burgerName": "Classic burger",
+              "longDesc": "A hamburger, or burger, is a food consisting of a cooked patty, typically ground beef, placed inside a sliced bun or roll. It's a popular dish often served with cheese, lettuce, tomato, onion,",
+              "tags": [
+                "Fat-18",
+                "Spicy",
+                "Set",
+                "Burger"
+              ]
+            }
+          },
+          {
+            "id": "Өглөөний сет",
+            "name": "Өглөөний сет",
+            "shortDesc": "Burger with fresh tea and salad",
+            "calories": "100kcal",
+            "prepTime": "10min",
+            "image": "/images/Menu-burger.jpg",
+            "details": {
+              "burgerName": "Classic burger",
+              "longDesc": "A hamburger, or burger, is a food consisting of a cooked patty, typically ground beef, placed inside a sliced bun or roll. It's a popular dish often served with cheese, lettuce, tomato, onion,",
+              "tags": [
+                "Fat-18",
+                "Spicy",
+                "Set",
+                "Burger"
+              ]
+            }
+          },
+          {
+            "id": "Өглөөний сет",
+            "name": "Өглөөний сет",
+            "shortDesc": "Burger with fresh tea and salad",
+            "calories": "100kcal",
+            "prepTime": "10min",
+            "image": "/images/Menu-burger.jpg",
+            "details": {
+              "burgerName": "Classic burger",
+              "longDesc": "A hamburger, or burger, is a food consisting of a cooked patty, typically ground beef, placed inside a sliced bun or roll. It's a popular dish often served with cheese, lettuce, tomato, onion,",
+              "tags": [
+                "Fat-18",
+                "Spicy",
+                "Set",
+                "Burger"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "chains": {
+    "title": "САЛБАР",
+    "background": "/images/dotted-map.png",
+    "locations": [
+      {
+        "id": "chain-1",
+        "name": "Талбай Салбар",
+        "address": "Сүхбаатар дүүрэг, 3-р хороо, Сөүлийн гудамж, Brauhaus, Carefour дэлгүүрийн хажууд.",
+        "phone": "89799999",
+        "hours": "10:00-22:00",
+        "image": "/images/talbai-chain.png"
+      }
+    ]
+  },
+  "news": {
+    "title": "МЭДЭЭ",
+    "featurednews1": {
+      "image": "/images/newstest1.png",
+      "label": "Шинэ Салбар...",
+      "description": "Блак Бургер ны байршлаа өөрчилж, Шинэ салбар Шинэ өнгө төрхтөй уулзах гээд бэлтгэж байгаа шүү Тун удахгүй гоё мэдээ дуулганаа хүлээж байгаарай"
+    },
+    "featurednews2": {
+      "image": "/images/newstest2.png",
+      "label": "Шинэ Салбар...",
+      "description": "Блак Бургер ны байршлаа өөрчилж, Шинэ салбар Шинэ өнгө төрхтөй уулзах гээд бэлтгэж байгаа шүү Тун удахгүй гоё мэдээ дуулганаа хүлээж байгаарай"
+    },
+    "featurednews3": {
+      "image": "/images/newstest3.png",
+      "label": "Шинэ Салбар...",
+      "description": "Блак Бургер ны байршлаа өөрчилж, Шинэ салбар Шинэ өнгө төрхтөй уулзах гээд бэлтгэж байгаа шүү Тун удахгүй гоё мэдээ дуулганаа хүлээж байгаарай"
+    },
+    "featurednews4": {
+      "image": "/images/newstest4.png",
+      "label": "Шинэ Салбар...",
+      "description": "Блак Бургер ны байршлаа өөрчилж, Шинэ салбар Шинэ өнгө төрхтөй уулзах гээд бэлтгэж байгаа шүү Тун удахгүй гоё мэдээ дуулганаа хүлээж байгаарай"
+    },
+    "featurednews5": {
+      "image": "/images/newstest5.png",
+      "label": "Шинэ Салбар...",
+      "description": "Блак Бургер ны байршлаа өөрчилж, Шинэ салбар Шинэ өнгө төрхтөй уулзах гээд бэлтгэж байгаа шүү Тун удахгүй гоё мэдээ дуулганаа хүлээж байгаарай"
+    }
+  }
+}
