@@ -6,7 +6,7 @@ export const usePostList = (options?: OperationVariables) => {
     ...options,
     variables: {
       perPage: 100,
-      clientPortalId: "B7HNIsw6o-J9M4fLAFuGs",
+      clientPortalId: process.env.CLIENT_PORTAL_ID,
       ...options?.variables,
     },
   });

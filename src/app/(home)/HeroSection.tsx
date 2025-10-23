@@ -3,10 +3,17 @@
 import Image from "next/image";
 import React from "react";
 import { usePostList } from "@/hooks/usePostList";
+import { readFile } from "@/lib/utils";
 
 export default function HeroSection() {
   const { posts } = usePostList();
-  const heroPost = posts?.find(post => post.featured) || posts?.[0]
+  const filteredPosts = posts?.filter((post) => post.categoryIds?.[0] === process.env.HOME_HERO_CMS_ID) || [];
+  const heroPost = filteredPosts?.find(post => post.featured) || filteredPosts?.[0];
+  
+  // Get images from CMS - expecting at least 2 images
+  const image1 = heroPost?.images?.[0]?.url ? readFile(heroPost.images[0].url) : "/images/hero-burger.png";
+  const image2 = heroPost?.images?.[1]?.url ? readFile(heroPost.images[1].url) : "/images/hero-burger.png";
+  
   return (
     <section className="w-full flex items-center justify-center bg-transparent pt-[64px] pb-[110px] max-lg:p-8 ">
       <div className="max-w-[1110px] flex flex-col-reverse lg:flex-row items-center justify-between gap-20 md:gap-5 lg:gap-[123px] relative">
@@ -21,42 +28,19 @@ export default function HeroSection() {
 
         <div className="relative w-[400px] h-[280px] max-sm:w-[300px] max-sm:h-[210px]">
           <Image
-            src="/images/hero-burger.png"
+            src={image1}
             alt="Burger 1"
             width={265}
             height={194}
             className="absolute top-[30px] right-[0px] rounded-lg object-cover"
           />
           <Image
-            src="/images/hero-burger.png"
+            src={image2}
             alt="Burger 2"
             width={225}
             height={204}
             className="absolute top-[60px] -left-[10px] rounded-lg object-cover"
           />
-
-          {[{ left: "90px" }, { left: "200px" }].map((pos, index) => (
-            <div
-              key={index}
-              className="absolute top-0"
-              style={{ left: pos.left }}
-            >
-              <div className="w-24 h-24 rounded-full bg-neutral-800/20 border flex items-center justify-center">
-                <div className="w-21 h-21 bg-secondary/90 rounded-full border p-2.5 flex flex-col items-center justify-center gap-1">
-                  <Image
-                    src="/images/hero-icon.png"
-                    alt="icon"
-                    width={23}
-                    height={23}
-                  />
-                  <p className="text-center text-[10px] text-foreground leading-tight">
-                    will be done in{" "}
-                    <span className="text-red-600">5min</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
         </div>
       </div>
     </section>

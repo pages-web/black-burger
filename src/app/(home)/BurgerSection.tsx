@@ -2,11 +2,22 @@
 
 import React from "react";
 import Image from "next/image";
-import pageData from "@/data/pages/home.json";
+import { usePostList } from "@/hooks/usePostList";
+import { readFile } from "@/lib/utils";
+
 export default function BurgerSection() {
-  const BurgerSection = pageData.aboutburger;
-  const leftFeatures = BurgerSection.features.slice(0, 2);
-  const rightFeatures = BurgerSection.features.slice(2);
+  const { posts } = usePostList();
+  const filteredPosts = posts?.filter((post) => post.categoryIds?.[0] === process.env.HOME_BURGER_CMS_ID) || [];
+  
+  // Map posts to features (expecting 4 posts for the 4 feature cards)
+  const features = filteredPosts.slice(0, 4).map((post) => ({
+    icon: post.images?.[0]?.url ? readFile(post.images[0].url) : "/images/placeholder-icon.png",
+    label: post.title || "",
+    description: post.content?.replace(/<[^>]*>/g, '').substring(0, 150) || "",
+  }));
+  
+  const leftFeatures = features.slice(0, 2);
+  const rightFeatures = features.slice(2, 4);
 
   return (
     <section className="max-w-90rem py-[15px] relative flex flex-col justify-center items-center bg-neutral-900/80">
@@ -37,7 +48,7 @@ export default function BurgerSection() {
 
         <div className="w-[402px] h-[518px] relative">
           <Image
-            src={BurgerSection.image}
+            src="/images/dissected-burger.png"
             alt="Burger Illustration"
             fill
             className="pointer-events-none select-none object-contain"
