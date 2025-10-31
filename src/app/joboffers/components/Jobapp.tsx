@@ -177,10 +177,10 @@ export default function Jobapp() {
                       </div>
 
                       <div className="self-stretch inline-flex justify-start items-center gap-1">
-                        <div className="w-20 sm:w-24 h-4 sm:h-5 bg-red-300/40 rounded-xl flex justify-center items-center gap-1">
+                        <div className="px-2 py-1 bg-red-300/40 rounded-xl flex justify-center items-center gap-1">
                           <div className="w-3 h-3 relative overflow-hidden">
                           </div>
-                          <div className="justify-start text-white text-xs font-medium leading-3">
+                          <div className="text-white text-xs font-medium leading-tight whitespace-nowrap">
                             {job.type}
                           </div>
                         </div>

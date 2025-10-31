@@ -57,23 +57,41 @@ export const Header = () => {
               </SheetHeader>
 
               <div className="flex flex-col pt-6">
-                {mobileLinks.map((item, index) => (
-                  <React.Fragment key={index}>
-                    <Link
-                      href={item.url}
-                      onClick={() => setOpen(false)}
-                      className={cn(
-                        "px-8 py-4 font-medium text-lg transition",
-                        isActive(item.url) && "text-primary"
+                {mobileLinks.map((item, index) => {
+                  const isContactButton = item.url === "/contact";
+                  return (
+                    <React.Fragment key={index}>
+                      {isContactButton ? (
+                        <button
+                          onClick={() => {
+                            setShowContactInfo((prev) => !prev);
+                            setOpen(false);
+                          }}
+                          className={cn(
+                            "px-8 py-4 font-medium text-lg transition text-left",
+                            isActive(item.url) && "text-primary"
+                          )}
+                        >
+                          {item.label}
+                        </button>
+                      ) : (
+                        <Link
+                          href={item.url}
+                          onClick={() => setOpen(false)}
+                          className={cn(
+                            "px-8 py-4 font-medium text-lg transition",
+                            isActive(item.url) && "text-primary"
+                          )}
+                        >
+                          {item.label}
+                        </Link>
                       )}
-                    >
-                      {item.label}
-                    </Link>
-                    {index < mobileLinks.length - 1 && (
-                      <div className="border-t border-gray-300" />
-                    )}
-                  </React.Fragment>
-                ))}
+                      {index < mobileLinks.length - 1 && (
+                        <div className="border-t border-gray-300" />
+                      )}
+                    </React.Fragment>
+                  );
+                })}
               </div>
             </SheetContent>
           </Sheet>
@@ -134,7 +152,7 @@ export const Header = () => {
 
       <div
         className={cn(
-          "bg-background/10 border-t overflow-hidden transition-all duration-500 ease-in-out z-10",
+          "bg-background/10 border-t overflow-hidden transition-all duration-500 ease-in-out z-50 relative",
           showContactInfo ? "max-h-40 py-6" : "max-h-0 py-0"
         )}
       >
